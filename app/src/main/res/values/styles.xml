@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/color_rosa</item>
+
+    </style>
+
+    <style name="Toolbar" parent="Theme.AppCompat">
+        <item name="android:background">@color/color_blanco</item>
+    </style>
+
+    <style name="AppTheme.Launcher" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/color_rosa</item>
+    </style>
+
+    <style name="AlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:colorAccent">@color/color_rosa</item>
+        <item name="android:textColor">@color/color_rosa</item>
+        <item name="android:textColorPrimary">@color/color_negro</item>
+        <item name="android:background">@drawable/bg_blanco</item>
+    </style>
+
+    <style name="BtnOK" parent="Theme.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_rosa</item>
+        <item name="android:shadowColor">@color/color_transparente</item>
+        <item name="android:background">@color/color_transparente</item>
+        <item name="fontFamily">@font/inter_bold</item>
+
+    </style>
+
+
+    <style name="Lbl" parent="Theme.MaterialComponents">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@color/color_rosa</item>
+        <item name="fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="Txt" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@drawable/txt_style</item>
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textColorHint">@color/color_rosa</item>
+    </style>
+
+    <style name="Btn"  >
+        <item name="android:background">@drawable/bg_btn</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:textColor">@color/color_blanco</item>
+    </style>
+
+</resources>

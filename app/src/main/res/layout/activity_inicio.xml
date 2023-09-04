@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".InicioActivity">
+    <include layout="@layout/toolbar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/rly_datos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="300dp"
+                    android:id="@+id/img"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitXY"
+                    android:layout_marginBottom="20dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img">
+                <com.google.android.material.textfield.TextInputLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    style="@style/Txt"
+                    android:id="@+id/tl_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/str_nombre"
+                    app:boxStrokeColor="@drawable/txt_style"
+                    android:layout_marginBottom="10dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/lbl_nombre"
+                        android:enabled="false"
+                        android:textColor="@drawable/txt_color"
+                        android:layout_height="wrap_content">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    style="@style/Txt"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/tl_nombre"
+                    android:hint="@string/str_edad"
+                    android:id="@+id/tl_edad"
+                    android:layout_height="wrap_content"
+                    app:boxStrokeColor="@drawable/txt_style"
+                    android:layout_marginBottom="10dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/lbl_edad"
+                        android:enabled="false"
+                        android:textColor="@drawable/txt_color"
+                        android:layout_height="wrap_content">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    style="@style/Txt"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/tl_edad"
+                    android:hint="@string/str_correo"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tl_correo"
+                    app:boxStrokeColor="@drawable/txt_style"
+                    android:layout_marginBottom="10dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/lbl_correo"
+                        android:enabled="false"
+                        android:textColor="@drawable/txt_color"
+                        android:layout_height="wrap_content">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    style="@style/Txt"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/tl_correo"
+                    android:hint="@string/str_celular"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tl_celular"
+                    app:boxStrokeColor="@drawable/txt_style"
+                    android:layout_marginBottom="10dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/lbl_celular"
+                        android:enabled="false"
+                        android:textColor="@drawable/txt_color"
+                        android:layout_height="wrap_content">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    style="@style/Txt"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/tl_celular"
+                    android:hint="@string/str_direccion"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tl_direccion"
+                    app:boxStrokeColor="@drawable/txt_style"
+                    android:layout_marginBottom="10dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/lbl_direccion"
+                        android:enabled="false"
+                        android:textColor="@drawable/txt_color"
+                        android:layout_height="wrap_content">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button
+                    android:id="@+id/btn_cerca_de_mi"
+                    style="@style/Btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/str_ver_ubicacion"
+                    android:textAlignment="center"
+                    android:layout_below="@id/tl_direccion"
+                    android:onClick="verUbicacion"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">JustoChallenge</string>
+    <string name="str_espere">Espere</string>
+    <string name="str_sin_datos">No se encontraron datos.</string>
+    <string name="str_ok">OK</string>
+    <string name="str_nombre">Nombre </string>
+    <string name="str_edad">Edad </string>
+    <string name="str_correo">Correo </string>
+    <string name="str_celular">Celular </string>
+    <string name="str_direccion">Dirección </string>
+    <string name="str_ver_ubicacion">Ver ubicación</string>
+    <string name="str_abrir_navegacion">Abrir navegación</string>
+    <string name="str_error_ubicacion">Hubo un problema con la ubicación</string>
+</resources>
